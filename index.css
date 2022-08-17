@@ -1,0 +1,611 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	font-size: 14px;
+	color: #000;
+	font-family: "microsoft yahei",sans-serif;
+	margin: 0 auto;
+	overflow-x: hidden;
+	background-color: white;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+img{
+	border: none;
+}
+.clearfix:after,
+.clearfix::before{
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.search-index{
+	width: 100%;
+	height: 44px;
+	box-sizing: border-box;
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+.search-index .logo{
+	width: 63px;
+	height: 30px;
+	margin-left: 12px;
+}
+.search-index .logo img{
+	display: inline-block;
+	height: 20px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.search-index .search-index-box{
+	align-self: center;
+	height: 30px;
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: #f0f0f0;
+	padding: 0 18px;
+	flex-direction: row;
+}
+.search-index .search-index-box .search-icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(image/1.png) no-repeat -60px -280px;
+	background-size: 104px 328px;
+}
+.search-index .search-index-box span:last-child {
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 3px;
+	color: #666;
+}
+.search-index .user-info{
+	align-self: flex-end;
+	width: 28px;
+	height: 28px;
+	line-height: 30px;
+	vertical-align: middle;
+	position: relative;
+}
+.search-index .user-info a{
+	display: block;
+	width: 28px;
+	height: 28px;
+	overflow: hidden;
+	margin-top: -8px;
+	margin-left: -5px;
+}
+.search-index .user-info a img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.tu{
+	position: relative;
+	overflow: hidden;
+	height:100%;
+	display: block;
+	transform: none;
+}
+.tu a img{
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+		 /*设置边框下的图片*/
+.play-box img{
+	width:100%;
+	height:250px;
+	border:0;
+	}
+	/*设置超链接下的所有图片不显示*/
+.play-box a{
+	display:block; /*现在是文本状态，要修改为块状*/
+	overflow:hidden; /*隐藏超过边框高度的图片*/
+	opacity:0; /*默认图片为全透明*/
+	height:0; /*默认高度为0*/
+	transition:opacity .5s; /*默认透明度过渡时间为0.5s*/
+	}
+	/*设置当前图片显示*/
+#imgList a.current{
+	opacity:1; /*默认图片显示*/
+	height:auto; /*默认高度为自动*/
+	}
+	
+	/*设置列表ul下的li*/
+.iconList ul li{
+	width:10px;
+	height:10px;
+	margin:0 4px;
+	font-size:0;
+	border-radius:50%;
+	background-color:#fff;
+	cursor:pointer;
+	float:left;
+	}
+	/*当图片变化时，图标也跟着变化*/
+ul li.current{
+	background-color:red;
+	}
+	/*设置图标绝对定位*/
+.iconList{
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-25px;
+	}
+
+
+.xiaotu{
+	margin-top: 12.5px;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.xiaotu ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.xiaotu ul li{
+	box-sizing: border-box;
+	width: 20%;
+	padding: 5px;
+	flex: 0 0 20%;
+}
+.xiaotu ul li a{
+	display: block;
+	position: relative;
+}
+.xiaotu ul li a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.xiaotu ul li a p{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	color: #666666;
+}
+.zdzk{
+	width: 100%;
+}
+.zdzk .zdzk-zi{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	top: 18px;
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 4%;
+}
+.zdzk .zdzk-tu ul{
+	box-sizing: border-box;
+	width: 98%;
+	padding-top: 8%;
+	padding-left: 5%;
+	padding-right: 4%;
+	white-space: nowrap;
+}
+.zdzk .zdzk-tu ul li{
+	overflow: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 50%;
+	box-shadow: 1px 1px 2px #53BAED;
+	border: 1px solid #CCCCCC;
+	border-radius: 9px;
+}
+.zdzk .zdzk-tu ul li a{
+	display: block;
+}
+.zdzk .zdzk-tu ul li .zdzk-tu{
+	position: relative;
+	width: 100%;
+	padding-top: 70%;
+}
+.zdzk .zdzk-tu ul li .zdzk-tu img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+.zdzk .zdzk-tu ul li p{
+	width: 100%;
+	overflow: hidden;
+	margin-top:8px;
+	padding-left: 6px;
+	font-size: 14px;
+	font-weight:bold;
+	color: #333333;
+	box-sizing: border-box;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+} 
+.zdzk .zdzk-tu ul li a span{
+	width: 100%;
+	line-height: 35px;
+}
+.zdzk .zdzk-tu ul .left{
+	margin-right: 3px;
+}
+.zdzk .zdzk-tu ul .left span:nth-of-type(1){
+	color: red;
+	margin-left:10px;
+	font-size: 13px;
+}
+.zdzk .zdzk-tu ul .left span:nth-of-type(2){
+	margin-left:-3px;
+	font-size: 13px;
+}
+.zdzk .zdzk-tu ul .right span:nth-of-type(1){
+	color: red;
+	margin-left:10px;
+	font-size: 13px;
+}
+.zdzk .zdzk-tu ul .right span:nth-of-type(2){
+	margin-left:-3px;
+	font-size: 13px;
+}
+
+
+.jxwl{
+	width: 100%;
+	display: block;
+	height: 230px;
+	position: relative;
+}
+.jxwl .jxwl-zi{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	top: 25px;
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 4%;
+}
+.jxwl .jxwl-biao{
+	width: 100%;
+	height: 100%;
+	padding-top: 35px;
+}
+.jxwl .jxwl-biao ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 3.5%;
+}
+.jxwl .jxwl-biao ul li{
+	flex: 0 0 33.33%;
+	box-sizing: border-box;
+	display: flex;
+	width: 33.33%;
+	height: 55px;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	
+}
+.jxwl .jxwl-biao ul li a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	color: #333333;
+	width:100px;
+	height:40px;
+	font-size: 14px;
+	padding-left: 6px;
+	padding-top: 13px;
+	box-sizing: border-box;
+	border-radius:5px;
+	line-height: 3px;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0 4px 5px #CCCCCC;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.jxwl .jxwl-biao ul li a img{
+	width: 30px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	left: 65px;
+}
+
+
+.jxgl{
+	display: block;
+	margin: 4%;
+}
+.jxgl .jxgl-zi{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	top: 25px;
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 4%;
+}
+
+.jxgl .jxgl-zi .gl{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 4%;
+}
+.jxgl .jxgl-zi a{
+	overflow: hidden;
+	position: absolute;
+	display: block;
+	background: #02db94;
+	border-radius: 20px;
+	width: 133px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	right: 3.5%;
+	top:10px;
+}
+.jxgl .jxgl-zi a span::before{
+	height: 14px;
+	width: 14px;
+	content: "";
+	margin-right: 4px;
+	display: inline-block;
+	background: url(image/！.png) no-repeat;
+	background-size: 14px 14px;
+	vertical-align: -2px;
+}
+.jxgl .jxgl-zi a span::after{
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 11px;
+	background: url(image/》.png) no-repeat;
+	background-size:7px 11px ;
+	margin-left: 4px;
+	vertical-align: -0.6px;
+}
+.jxgl-tu{
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.row{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-right: 3.5%;
+}
+.jxgl-tu1{
+	width: 100%;
+	margin-right: 3%;
+}
+.jxgl-tu1 a{
+	display: block;
+	overflow: hidden;
+}
+.jxgl-tu1 a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.tu1-1{
+	width: 100%;
+		height: 48px;
+		line-height: 23px;
+		margin-top: 6px;
+		font-size: 14px;
+		color: #000000;
+		font-weight: bold;
+		overflow: hidden;
+		display: -webkit-box;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+}
+.tu1-bottom{
+	width: 100%;
+	height: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+.tu1-bottom .tu1-left{
+	vertical-align: middle;
+	display: flex;
+}
+.tu1-left span:nth-of-type(1){
+	background: url(image/5-1a.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	border-radius: 50%;
+}
+.tu1-2{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 23px;
+	font-size: 12px;
+	margin-left: 5px;
+}
+.tu1-right{
+	color: #666;
+	font-family: "arial narrow";
+	font-weight: bold;
+	margin-top: 5px;
+	margin-right: 5px;
+	display: flex;
+}
+.tu1-right span:nth-of-type(1){
+	background: url(image/5-1b.png) no-repeat;
+	vertical-align: middle;
+	width: 18px;
+	height: 15px;
+	background-size: 18px 15px;
+}
+.tu1-right span:nth-of-type(2){
+	display: flex;
+	line-height: 23px;
+	font-size: 16px;
+	margin-top: -4px;
+	margin-left: 4px;
+}
+.jxgl-tu2{
+	width: 100%;
+	overflow: hidden;
+}
+.jxgl-tu2 a{
+	display: block;
+	overflow: hidden;
+}
+.jxgl-tu2 a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.tu2-left span:nth-of-type(1){
+	background:url(image/5-3a.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	border-radius: 50%;
+}
+
+.jxgl-tu3{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.jxgl-tu3 a{
+	display: block;
+	overflow: hidden;
+}
+.jxgl-tu3 a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.tu3-left span:nth-of-type(1){
+	background:url(image/5-2a.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	border-radius: 50%;
+}
+
+.jxgl-tu4{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5px;
+}
+.jxgl-tu4 a{
+	display: block;
+	overflow: hidden;
+}
+.jxgl-tu4 a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.tu4-left span:nth-of-type(1){
+	background:url(image/5-4a.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	border-radius: 50%;
+}
+
+.jxgl-tu5{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5px;
+}
+.jxgl-tu5 a{
+	display: block;
+	overflow: hidden;
+}
+.jxgl-tu5 a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.tu5-left span:nth-of-type(1){
+	background:url(image/5-5a.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	border-radius: 50%;
+}

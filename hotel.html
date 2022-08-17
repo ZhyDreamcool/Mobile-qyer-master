@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>酒店</title>
+		<script src="jq/jquery-1.12.2.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="qy-css/hotel.css"/>
+	</head>
+	<body>
+	
+		
+		<div class="big-box">
+			
+		
+		<div class="search-index">
+			<span class="a"><a href="index.html"><img src="qy-img/jt.jpg" ></a></span>
+			<span class="b">酒店频道</span>
+			<span class="c"></span>
+		</div>
+		
+		<div class="bj" id="bj">
+			<h1>旅途可以<br>
+			多一种可能。
+			</h1>
+			<div class="hw clearfix">
+					<div class="bj-1">
+						<span class="bj-4" id="action">海外酒店</span>
+					</div>
+					<div class="bj-2">
+						<span>国内酒店</span>
+					</div>		
+			</div>
+			<div class="bj-form">
+				<a href="hotel-search.html">
+				<span>想去哪里？</span>
+				</a>
+			</div>
+			<div class="bj-form">
+				<a href="">
+				<span>入住日期-离店时间</span></a>
+			</div>
+			<div class="button">
+				<button type="button">
+					<a href=""></a>
+					<span>搜索酒店</span>
+				</button>
+			</div>
+			<div class="bj-bot">
+				<span class="bj-bot-1">
+					房价最低 · 立即确认 · 免费取消 · 中文服务
+				</span>
+			</div>
+		</div>
+		
+		<section>
+			<span class="sec-top">精选住宿</span>
+			<div class="nav-sec">
+				<ul class="clearfix">
+					<div><li id="action1">北京</li></div>
+					<div><li>旧金山</li></div>
+					<div><li>东京</li></div>
+					<div><li>香港</li></div>
+					<div><li>纽约</li></div>
+				</ul>
+			</div>
+			
+			<div class="bj-ect" style="overflow: hidden;">
+				<div id="bj-ect-1"></div>
+				<div id="bj-ect-2"></div>
+				<div id="bj-ect-3"></div>
+				<div id="bj-ect-4"></div>
+				<div id="bj-ect-5"></div>
+			</div>
+		</section>
+		
+		<div class="nav">
+			<span class="nav-top">一城一宿</span>
+			<div class="nav-bj">
+				<a href="hotel-richu.html"> 
+					<div class="pic">
+						<img src="qy-img/1.jpg" >
+						<div class="pic-bot">
+							<div class="nav-text-1">北京日出东方凯宾斯基酒店</div>
+							<div class="nav-text-2">
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="bor"></span>
+								<span class="txt">9.20分</span>
+							</div>
+							<div class="nav-text-3">
+								<p>2045</p>
+								<span>元起/晚</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="pic-1">
+						<img src="qy-img/2.jpg" >
+						<div class="pic-bot">
+							<div class="nav-text-1">北京雁栖酒店</div>
+							<div class="nav-text-2">
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="bor"></span>
+								<span class="txt">9.40分</span>
+							</div>
+							<div class="nav-text-3">
+								<p>1988</p>
+								<span>元起/晚</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+				
+			</div>
+		<div class="nav-1">
+			<span class="nav-top">奢享假日</span>
+			<div class="nav-bj">
+				<a href=""> 
+					<div class="pic">
+						<img src="qy-img/11.jpg" >
+						<div class="pic-bot">
+							<div class="nav-text-1">北京新桥诺富特饭店</div>
+							<div class="nav-text-2">
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="bor"></span>
+								<span class="txt">8.80分</span>
+							</div>
+							<div class="nav-text-3">
+								<p>514</p>
+								<span>元起/晚</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="pic-1">
+						<img src="qy-img/4.jpg" >
+						<div class="pic-bot">
+							<div class="nav-text-1">北京王府井希尔顿酒店</div>
+							<div class="nav-text-2">
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="strat"></span>
+								<span class="bor"></span>
+								<span class="txt">9.20分</span>
+							</div>
+							<div class="nav-text-3">
+								<p>843</p>
+								<span>元起/晚</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>	
+			</div>
+			
+			<div class="href">
+				<a href="">查看更多北京住宿></a>
+			</div>
+			
+			<section class="bottom-cont">
+				<div class="bottom-tra">
+					<h3>跟着电影去旅行</h3>
+					<p>电影镜头下的异国他乡，永远对旅人有着非凡的吸引力。多瑙河畔的忧郁星期天，罗马街头的阳光与微风，在午夜巴黎寻找黄金时代，到喧闹旺角体会平凡人的英雄梦想，或是干脆放空所有，迷失于东京的霓虹闪烁……</p>
+				</div>
+				<div class="bottom-place">
+					<div class="card" style="background-image: url(qy-img/5.jpg);">
+						<a href="">
+							<div class="caption">
+								<div class="name">布达佩斯之恋</div>
+								<div class="info">Budapest</div>
+							</div>
+					</a></div>
+					<div class="card" style="background-image: url(qy-img/6.jpg);">
+						<a href="">
+								<div class="caption">
+									<div class="name">罗马假日</div>
+									<div class="info">Roma</div>
+								</div>
+						</a>
+					</div>
+					<div class="card" style="background-image: url(qy-img/7.jpg);">
+						<a href="">
+								<div class="caption">
+									<div class="name">午夜巴黎</div>
+									<div class="info">Paris</div>
+								</div>
+						</a>
+					</div>
+					<div class="card" style="background-image: url(qy-img/8.jpg);">
+						<a href="">
+								<div class="caption">
+									<div class="name">旺角卡门</div>
+									<div class="info">Hong Kong</div>
+								</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			
+			<div class="txt1"><h4>繁华都市</h4></div>
+		
+			<div class="zh-box">
+				<a href="">
+				<div class="zh-img">
+					<img src="qy-img/9.jpg" >
+				</div>
+				<div class="caption">
+					<div class="name">三井花园饭店京都新町别邸</div>
+					<div class="info">
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="gad"></div>
+						<div class="gard">8.9分</div>
+
+					</div>
+				</div>	
+				<div class="price">
+					<em>1296</em>
+					<span class="pr-txt">元起/晚</span>
+				</div>
+				</a>
+			</div>
+			
+			
+			<div class="zh-box">
+				<a href="">
+				<div class="zh-img-1">
+					<img src="./qy-img/10.jpg" >
+				</div>
+				<div class="caption">
+					<div class="name">大阪普米尔三井花园饭店</div>
+					<div class="info">
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="strat"></div>
+						<div class="gad"></div>
+						<div class="gard">9.6分</div>
+			
+					</div>
+				</div>	
+				<div class="price">
+					<em>969</em>
+					<span class="pr-txt">元起/晚</span>
+				</div>
+				</a>
+			</div>
+			
+		</div>
+
+	<script type="text/javascript">
+		//初始页面加载时出现的样式 样式不在html 直接写在CSS里面，，通过JQ添加到（addClass) 对应的位置
+		//eq查询数组 从0开始
+		//
+		$(window).load(function(){
+			$(".hw>div").eq(0).addClass("table").siblings().removeClass("table");
+		})
+		
+		
+		$(".bj-2").click(function(){
+			$(".hw>div").addClass("action").siblings().removeClass("action");
+			var index = $(".hw>div").index();
+			$(".bj-2").addClass("table").siblings().removeClass("table");
+			 $("#bj").css("backgroundColor",'#704dff');
+		})
+		
+		$(".bj-1").click(function(){
+			$(".hw>div").addClass("action").siblings().removeClass("action");
+			var index = $(".hw>div").index();
+			$(".bj-1").addClass("table").siblings().removeClass("table");
+			$("#bj").css({
+				backgroundColor: "#50b8ea",
+				backgroundImage: "linear-gradient(315deg,transparent,hsla(0,0%,100%,.4))"
+			});
+		})
+		
+		$(window).load(function(){
+			$(".nav-sec>ul>div").eq(0).addClass("table1").siblings().removeClass("table1");
+		})
+		
+		$(".nav-sec>ul>div").click(function(){
+			var divshow = $(".bj-ect").children("div");
+			if(!$(this).hasClass('table1')){
+				var index = $(this).index();
+				$(this).addClass('table1').siblings('div').removeClass('table1');
+				$(divshow[index]).show();
+				$(divshow[index]).siblings('div').hide();
+			}
+		})
+		
+		
+		// echarts		
+		//实现多个echarts 图表自适应
+		window.onresize = function () {
+		    $("bj-ect").resize();
+		    echarts.init(document.getElementById("bj-ect-1")).resize();
+		    echarts.init(document.getElementById("bj-ect-2")).resize();
+		    echarts.init(document.getElementById("bj-ect-3")).resize();
+		    echarts.init(document.getElementById("bj-ect-4")).resize();
+			echarts.init(document.getElementById("bj-ect-5")).resize();
+		};
+		
+		var myChart = echarts.init(document.getElementById('bj-ect-1'));
+		var option = {
+			title:{
+				text:'北京区域平均数据',
+				subtext:'纯属虚构',
+				left:'center'
+			},
+			tooltip:{
+				trigger:'item'
+			},
+			color : [ '#546fc6', '#91cb74', '#fac859', '#ee6668', '#74bfde'],
+			legend:{
+				//图例组件竖轴
+				orient:'vertical',
+				left:'right'
+			},
+			series:[{
+				name:'访问来源',
+				type:'pie',
+				radius:'50%',
+				data:[
+					{value:1048,name:'人数'},
+					{value:332,name:'价格'},
+					{value:356,name:'评分'},
+					{value:785,name:'环境'},
+					{value:356,name:'空气质量'}
+				],
+				//动态
+				emphasis:{
+					itemStyle:{
+						//阴影模糊大小
+						shadowBlur:20,
+						shadowOffsetX:0,
+						shadowColor:"rgba(0,0,0,0.5)"
+					}
+				}
+			}]
+		}
+		myChart.setOption(option);
+		  window.addEventListener('resize',function(){
+		        myChart.resize();
+		    });
+		
+		var myChart = echarts.init(document.getElementById('bj-ect-2'));
+		var option = {
+			title:{
+				text:'北京区域平均数据',
+				subtext:"纯属虚构",
+				left:'center'
+			},
+			tooltip:{
+				trigger:'item'
+			},
+			color : [ '#546fc6', '#91cb74', '#fac859', '#ee6668', '#74bfde'],
+			
+			legend:{
+				top:'7%',
+				left:'left',
+				orient:'vertical'
+			},
+			series:[{
+				name:'访问来源',
+				type:'pie',
+				//第一个是中心要空多少 第二个是圆要多宽
+				radius:['40%','70%'],
+				//一般这种圆环图就要这个
+				avoidLabelOverlap:false,
+				itemStyle:{
+					borderRadius:10,
+					borderColor:'#fff',
+					borderWidth:2
+				},
+				label:{
+					show:false,
+					position:'center'
+				},
+				emphasis:{
+					label:{
+						show:true,
+						fontSize:'30',
+						fontWidth:'boId'
+					}
+				},
+				labelLine:{
+					show:false
+				},
+				  data: [
+				    {value: 1048, name: '人数'},
+				    {value: 735, name: '价格'},
+				    {value: 580, name: '评分'},
+				    {value: 484, name: '环境'},
+				    {value: 300, name: '空气质量'}
+				  ]
+			}]
+		}
+		myChart.setOption(option);
+
+		//bj-ect-2
+		var myChart = echarts.init(document.getElementById('bj-ect-3'));
+		var option = {
+			title:{
+				text:'东京区域平均数据',
+			},
+			tooltip:{
+				trigger:'axis',
+				axisPointer:{
+					type:'shadow'
+				}
+				
+			},
+			color : [ '#74bfde'],
+			xAxis:{
+				type:'category',
+				data:['价格','人数','评分','环境','空气质量']
+			},
+			yAxis:{
+				type:'value'
+			},
+			series:[{
+				data:[432,233,300,120,134],
+				type:'bar',
+				showBackground:true,
+				backgroundStyle:{
+					color:'rgba(180,180,180,0.2)'
+				}
+			}]
+		}
+		myChart.setOption(option);
+			
+			
+			//
+			var myChart = echarts.init(document.getElementById('bj-ect-4'));
+			var option = {
+				title:{
+					//标题
+					text:'香港区域平均数据',
+					// 小标题
+					subtext:'纯属虚构'
+				},
+				color : [ '#91cb74'],
+				//提示框组件
+				tooltip:{
+					//图例组件
+					trigger:'axis',
+					 axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+					   type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+					        },
+					//formater 提示框浮层内容格式器
+					// params 参数 里面包括你所有的框
+					formatter:function(params){
+						var tar = params[1];
+						return tar.name + '<br/>' + tar.seriesName + ':' + tar.value;
+					}
+				},
+				grid:{
+					//网格设置
+					left:'3%',
+					right:'4%',
+					bottom:'3%',
+					containLabel:true
+				},
+				xAxis:{
+					type:'category',
+					splitLine:{
+						//是否显示X轴的线
+						show:false
+					},
+					data: ['人数', '价格', '评分', '环境', '空气质量']
+				},
+				yAxis:{
+					type:'value'
+				},
+				series:[{
+					name:'辅助',
+					type:'bar',
+					stack:'总量',
+					itemStyle:{
+						barBorderColor:'rgba(0,0,0,0)',
+						color:'rgba(0,0,0,0)'
+					},
+					emphasis: {
+					                itemStyle: {
+					                    barBorderColor: 'rgba(0,0,0,0)',
+					                    color: 'rgba(0,0,0,0)'
+					                }
+					            },
+					            data: [0, 1700, 1400, 1200, 300, 0]
+					        },
+					        {
+					            name: '数据',
+					            type: 'bar',
+					            stack: '总量',
+					            label: {
+					                show: true,
+					                position: 'inside'
+					            },
+					            data: [2900, 1200, 500, 200, 900]
+					
+				}]
+				
+			}
+			myChart.setOption(option);
+			
+			var myChart = echarts.init(document.getElementById('bj-ect-5'));
+			var option = {
+				title:{
+					text:'东京区域平均数据',
+				},
+				tooltip:{
+					trigger:'axis',
+					axisPointer:{
+						type:'shadow'
+					}
+					
+				},
+				color : [ '#ee6668'],
+				xAxis:{
+					type:'category',
+					data:['价格','人数','评分','环境','空气质量']
+				},
+				yAxis:{
+					type:'value'
+				},
+				series:[{
+					data:[432,233,300,120,134],
+					type:'bar',
+					showBackground:true,
+					backgroundStyle:{
+						color:'rgba(180,180,180,0.2)'
+					}
+				}]
+			}
+			myChart.setOption(option);
+		
+	</script>
+		
+	
+	</body>
+</html>
